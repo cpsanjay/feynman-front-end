@@ -32,7 +32,7 @@ const Card = ({ title, description }) => {
 const InfoCards = () => {
   return (
     <div className=" w-screen mt-10" id="info-card-section">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center ">
           INFO
         </h1>
