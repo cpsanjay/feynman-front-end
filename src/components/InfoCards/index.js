@@ -36,10 +36,10 @@ const InfoCards = () => {
       <div className="container mx-auto px-4">
         <div className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 text-center flex flex-col">
           <span className="font-Playwrite">
-            Enhance Your Knowledge and Fullfil You Aspirations
+            There's Plenty of Room at the Bottom
           </span>
           <span className="text-sm font-light mt-4 leading-6">
-            -Albert Einstein
+            -Richard Feynman
           </span>
         </div>
         <HorizontalRoller />
