@@ -39,7 +39,7 @@ const InfoCards = () => {
             There's Plenty of Room at the Bottom
           </span>
           <span className="text-sm font-light mt-4 leading-6">
-            -Richard Feynman
+            - Richard Feynman
           </span>
         </div>
         <HorizontalRoller />
