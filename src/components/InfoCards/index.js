@@ -20,7 +20,7 @@ const infoDetails = [
 
 const Card = ({ title, description }) => {
   return (
-    <div className="block max-w-sm p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 m-4 ">
+    <div className="block max-w-sm p-6 mx-auto bg-blue-100 rounded-lg hover:shadow hover:bg-blue-50 m-4 ">
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
         {title}
       </h5>

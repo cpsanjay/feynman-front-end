@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../images/logo.svg";
+import Logo from "../../images/LOGO.png";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="pb-6 bg-white lg:pb-0 fixed w-full top-0">
+    <header className=" bg-white lg:pb-0 fixed w-full top-0 z-10">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
@@ -66,27 +66,27 @@ const Header = () => {
 
           <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
             <div
-              onClick={() => scrollToSection("info-card-section")}
-              title=""
-              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-            >
-              {" "}
-              Info{" "}
-            </div>
-
-            <div
               onClick={() => scrollToSection("our-aim")}
               title=""
-              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 cursor-pointer"
             >
               {" "}
               Aim{" "}
             </div>
 
             <div
+              onClick={() => scrollToSection("info-card-section")}
+              title=""
+              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 cursor-pointer"
+            >
+              {" "}
+              Info{" "}
+            </div>
+
+            <div
               onClick={() => scrollToSection("training-program")}
               title=""
-              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 cursor-pointer"
             >
               {" "}
               Training Programs{" "}
@@ -103,18 +103,6 @@ const Header = () => {
             <div className="flex flex-col px-6 -my-2 space-y-1">
               <div
                 onClick={() => {
-                  scrollToSection("info-card-section");
-                  setOpenNav(false);
-                }}
-                title=""
-                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-              >
-                {" "}
-                Info{" "}
-              </div>
-
-              <div
-                onClick={() => {
                   scrollToSection("our-aim");
                   setOpenNav(false);
                 }}
@@ -123,6 +111,18 @@ const Header = () => {
               >
                 {" "}
                 Aim{" "}
+              </div>
+
+              <div
+                onClick={() => {
+                  scrollToSection("info-card-section");
+                  setOpenNav(false);
+                }}
+                title=""
+                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+              >
+                {" "}
+                Info{" "}
               </div>
 
               <div

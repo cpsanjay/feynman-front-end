@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* MovingText.css */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  animation: moveText 15s linear infinite;
+}
+
+.moving-text:hover {
+  animation-play-state: paused;
+}
