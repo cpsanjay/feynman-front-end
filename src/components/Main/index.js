@@ -4,7 +4,7 @@ import FeynmanMainImgMob from "../../images/Artboard2.png";
 
 const Main = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen" id="header-div">
       <div className="container mx-auto">
         <img
           src={FeynmanMainImg}

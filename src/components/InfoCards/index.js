@@ -1,4 +1,5 @@
 import React from "react";
+import HorizontalRoller from "../HorizontalRoller";
 
 const infoDetails = [
   {
@@ -14,7 +15,7 @@ const infoDetails = [
   {
     title: "Classes on Holidays",
     description:
-      "3. We offer classes on holidays to maximize your learning opportunities.",
+      "We offer classes on holidays to maximize your learning opportunities.",
   },
 ];
 
@@ -33,8 +34,17 @@ const InfoCards = () => {
   return (
     <div className=" w-screen mt-10" id="info-card-section">
       <div className="container mx-auto px-4">
-        <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center ">
-          INFO
+        <div className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 text-center flex flex-col">
+          <span className="font-Playwrite">
+            Enhance Your Knowledge and Fullfil You Aspirations
+          </span>
+          <span className="text-sm font-light mt-4 leading-6">
+            -Albert Einstein
+          </span>
+        </div>
+        <HorizontalRoller />
+        <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center">
+          OUR SPECIALITIES
         </h1>
         <div className="lg:flex gap-4 mx-auto">
           {infoDetails.map((item, i) => (

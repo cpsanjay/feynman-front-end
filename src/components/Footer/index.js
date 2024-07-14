@@ -17,11 +17,11 @@ const SocialMediaInfo = ({ Icon, link, text }) => {
 
 const Footer = () => {
   return (
-    <div className="bg-[#433d8b] text-white p-4">
+    <div className="bg-[#433d8b] text-white p-4" id="contact-us">
       <div className="container mx-auto flex md:flex-row flex-col max-w-[1260px]">
         <div className=" md:w-[50%] flex sm:mt-14 mt-3 justify-center">
           <div className="my-auto">
-            <h1 className="text-4xl font-extrabold mb-6">
+            <h1 className="text-4xl font-extrabold mb-6 text-center md:text-left">
               Contact Information
             </h1>
             <div className="flex items-center justify-center flex-col md:flex-row">
@@ -39,7 +39,7 @@ const Footer = () => {
                 <SocialMediaInfo
                   Icon={FaWhatsapp}
                   link="https://wa.me/qr/IZMSJTRBYY3HF1"
-                  text="Join WhatsApp"
+                  text="Connect us through WhatsApp"
                 />
                 <SocialMediaInfo
                   Icon={TiSocialFacebookCircular}

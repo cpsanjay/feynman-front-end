@@ -23,9 +23,13 @@ const Header = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <a href="/" title="" className="flex">
+            <div
+              onClick={() => scrollToSection("header-div")}
+              title=""
+              className="flex"
+            >
               <img className="w-auto h-8 lg:h-10" src={Logo} alt="Logo" />
-            </a>
+            </div>
           </div>
 
           <button
@@ -91,6 +95,14 @@ const Header = () => {
               {" "}
               Training Programs{" "}
             </div>
+            <div
+              onClick={() => scrollToSection("contact-us")}
+              title=""
+              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 cursor-pointer"
+            >
+              {" "}
+              Contact Us{" "}
+            </div>
           </div>
         </nav>
 
@@ -135,6 +147,17 @@ const Header = () => {
               >
                 {" "}
                 Training Programs{" "}
+              </div>
+              <div
+                onClick={() => {
+                  scrollToSection("contact-us");
+                  setOpenNav(false);
+                }}
+                title=""
+                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+              >
+                {" "}
+                Contact Us{" "}
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ const ContactUsStrip = () => {
     <div className=" border-b border-t text-center font-semibold text-sm sm:text-lg bg-blue-400 text-white">
       <MovingText>
         <div className=" flex items-center justify-center">
-          Registerations open for January - June Batch{" "}
+          Registrations open for January - June Batch{" "}
           <a
             href="https://bit.ly/FIP_Registration_form"
             className="ml-2 text-black"
@@ -21,7 +21,7 @@ const ContactUsStrip = () => {
             {" "}
             Register Now
           </a>
-          . July to December{" "}
+          . <span className="ml-2">July to December </span>
           <a
             href="https://bit.ly/FIP_Registration_form"
             className="ml-2 text-black"
