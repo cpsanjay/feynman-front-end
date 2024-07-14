@@ -8,7 +8,7 @@ const SocialMediaInfo = ({ Icon, link, text }) => {
   return (
     <div className="flex items-center my-4">
       <Icon className="text-2xl mr-4" />
-      <a href={link} target="_blank" className="text-wrap">
+      <a href={link} target="_blank" className="text-wrap" rel="noreferrer">
         {text}
       </a>
     </div>
@@ -16,20 +16,6 @@ const SocialMediaInfo = ({ Icon, link, text }) => {
 };
 
 const Footer = () => {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    const offset = 50; // Offset in pixels
-    const headerHeight = 60; // Assuming the header height is 60px
-    const elementPosition = element.getBoundingClientRect().top; // Position relative to the viewport
-    const offsetPosition =
-      elementPosition + window.scrollY - offset - headerHeight;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="bg-[#433d8b] text-white p-4">
       <div className="container mx-auto flex sm:flex-row flex-col">
@@ -92,6 +78,7 @@ const Footer = () => {
               height="450"
               allowfullscreen=""
               loading="lazy"
+              title="map"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

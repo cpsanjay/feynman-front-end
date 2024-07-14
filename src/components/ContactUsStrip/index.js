@@ -16,6 +16,7 @@ const ContactUsStrip = () => {
             href="https://bit.ly/FIP_Registration_form"
             className="ml-2 text-black"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Register Now
@@ -25,6 +26,7 @@ const ContactUsStrip = () => {
             href="https://bit.ly/FIP_Registration_form"
             className="ml-2 text-black"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Register Now
