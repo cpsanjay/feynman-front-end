@@ -18,13 +18,13 @@ const SocialMediaInfo = ({ Icon, link, text }) => {
 const Footer = () => {
   return (
     <div className="bg-[#433d8b] text-white p-4">
-      <div className="container mx-auto flex sm:flex-row flex-col">
-        <div className=" sm:w-[50%] flex sm:mt-14 mt-3 justify-center">
+      <div className="container mx-auto flex md:flex-row flex-col max-w-[1260px]">
+        <div className=" md:w-[50%] flex sm:mt-14 mt-3 justify-center">
           <div className="my-auto">
             <h1 className="text-4xl font-extrabold mb-6">
               Contact Information
             </h1>
-            <div className="flex items-center justify-center flex-col sm:flex-row">
+            <div className="flex items-center justify-center flex-col md:flex-row">
               <div className="w-auto">
                 <span>Scan the QR to Register</span>
                 <img
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" sm:w-[50%]">
+        <div className=" md:w-[50%]">
           <div className="sm:p-14 p-2 flex align-center justify-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15593.801231350599!2d76.650802!3d12.2854325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf6fe46ab23ceb%3A0x61455e1a5cedfdf0!2sFeynman%20Institute%20of%20Physics!5e0!3m2!1sen!2sin!4v1720956012504!5m2!1sen!2sin"
